@@ -15,7 +15,7 @@ if __name__ == "__main__":
     # env = wrappers.Monitor(env, 'tmp/video', video_callable=lambda episode_id: True, force=True)
     filename = "cartpole_1e-5_1024x512_1800games.png"
 
-    figure_file = "plots/" + filename
+    figure_file = f"plots/{filename}"
 
     best_score = env.reward_range[0]
     score_history = []

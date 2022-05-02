@@ -18,7 +18,7 @@ class ActorCriticNetwork(keras.Model):
         self.n_actions = n_actions
         self.model_name = name
         self.checkpoint_dir = chkpt_dir
-        self.checkpoint_file = os.path.join(self.checkpoint_dir, name + "_ac")
+        self.checkpoint_file = os.path.join(self.checkpoint_dir, f"{name}_ac")
 
         self.fc1 = Dense(self.fc1_dims, activation="relu")
         self.fc2 = Dense(self.fc2_dims, activation="relu")
